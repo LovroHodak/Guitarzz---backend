@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
-
+//"https://guitarzz.herokuapp.com/"
+//"http://localhost:3000"
 require("dotenv").config();
 require("./config/db.config");
 
