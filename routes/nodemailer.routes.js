@@ -13,15 +13,15 @@ let transporter = nodemailer.createTransport({
   service: "outlook",
   secureConnection: false,
   auth: {
-    user: NODEMAILER_USER,
-    pass: NODEMAILER_PASS,
+    user: 'lovro.dev@outlook.com',
+    pass: 'pusigazaho10',
   },
 });
 
 router.post("/send-email", (req, res, next) => {
   let { email, orderData, name, total } = req.body;
   let subject = "Lovro Dev NODEMAILER";
-  let secondMail = NODEMAILER_CC;
+  let secondMail = 'lovro.dev@gmail.com';
 
   console.log(`send MAIL: ${email}, ${name}, ${total}, ${orderData}`);
 
