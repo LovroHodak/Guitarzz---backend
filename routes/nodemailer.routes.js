@@ -27,7 +27,7 @@ router.post("/send-email", (req, res, next) => {
 
   transporter
     .sendMail({
-      from: `"Lovro Dev" ${NODEMAILER_USER_DIFF_FORMAT}`,
+      from: `${NODEMAILER_USER_DIFF_FORMAT}`,
       to: email,
       subject: subject,
       name: name,
