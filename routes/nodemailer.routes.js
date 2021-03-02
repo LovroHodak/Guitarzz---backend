@@ -21,7 +21,7 @@ let transporter = nodemailer.createTransport({
 router.post("/send-email", (req, res, next) => {
   let { email, orderData, name, total } = req.body;
   let subject = "Lovro Dev NODEMAILER";
-  let secondMail = 'lovro.dev@gmail.com';
+  let secondMail = NODEMAILER_CC;
 
   console.log(`send MAIL: ${email}, ${name}, ${total}, ${orderData}`);
 
