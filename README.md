@@ -40,5 +40,17 @@ Express, cors, bodyParser, path, routes, app.listen
 
 
 
+LOVROO!!
+When u test on local dont forget to change
+
+MONGO_URI to LOCAL_URI (backend)
+CORS from "https://guitarzz.herokuapp.com/" to "http://localhost:3000" (backend)
+
+API_URL = 'https://guitarzz.herokuapp.com' to 'http://localhost:5000' (frontend)
+
+
+
+
+
 
 
